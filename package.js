@@ -1,7 +1,7 @@
 Package.describe({
     summary: "Accounts Templates Materialize style.",
     version: "0.1.0",
-    name: "pfafman:user-acounts-materialize",
+    name: "pfafman:user-accounts-materialize",
     git: "https://github.com/pfafman/meteor-useraccounts-materialize.git",
 });
 
@@ -14,11 +14,11 @@ Package.on_use(function(api, where) {
     ], "client");
 
     api.use([
-        "useraccounts:core",
+        "pfafman:user-accounts-core",
     ], ["client", "server"]);
 
     api.imply([
-        "useraccounts:core@1.4.0",
+        "pfafman:user-accounts-core@1.4.1"
     ], ["client", "server"]);
 
     api.add_files([
@@ -60,7 +60,6 @@ Package.on_use(function(api, where) {
 Package.on_test(function(api) {
     api.use([
         "pfafman:user-acounts-materialize",
-        "useraccounts:core@1.4.0",
     ]);
 
     api.use([
