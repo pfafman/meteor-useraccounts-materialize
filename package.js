@@ -14,11 +14,11 @@ Package.on_use(function(api, where) {
     ], "client");
 
     api.use([
-        "pfafman:user-accounts-core",
+        "useraccounts:core",
     ], ["client", "server"]);
 
     api.imply([
-        "pfafman:user-accounts-core@1.4.1"
+        "useraccounts:core@1.5.0"
     ], ["client", "server"]);
 
     api.add_files([
